@@ -21,3 +21,4 @@ jobs:
         with:
           branch: main
           token: ${{ secrets.GITHUB_TOKEN }}
+          committer: AndyBoltonMV <noreply@github.com>
