@@ -22,3 +22,4 @@ jobs:
           branch: main
           token: ${{ secrets.GITHUB_TOKEN }}
           committer: AndyBoltonMV <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
