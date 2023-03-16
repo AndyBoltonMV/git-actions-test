@@ -15,13 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: dev
+          ref: main
       - name: Get Credentials
         uses: rlespinasse/git-commit-data-action@v1.x
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          branch: main
+          branch: dev
           token: ${{ secrets.GITHUB_TOKEN }}
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
           author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
